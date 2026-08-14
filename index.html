@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince AR Abdur Rahman - Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#f0f2f5] font-sans text-gray-900 pb-12">
+
+    <!-- Top Navigation Bar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 flex justify-between items-center px-4 py-2 border-b">
+        <div class="flex items-center space-x-2">
+            <i class="fab font-bold text-3xl text-blue-600 fa-facebook"></i>
+            <div class="bg-gray-100 px-3 py-2 rounded-full flex items-center space-x-2">
+                <i class="fas fa-search text-gray-500"></i>
+                <input type="text" placeholder="Search Portfolio..." class="bg-transparent text-sm focus:outline-none hidden md:inline-block">
+            </div>
+        </div>
+        <div class="flex space-x-6 text-xl text-gray-600">
+            <button class="text-blue-600 border-b-4 border-blue-600 py-1"><i class="fas fa-home"></i></button>
+            <button class="hover:bg-gray-100 p-2 rounded-lg"><i class="fas fa-user-friends"></i></button>
+            <button class="hover:bg-gray-100 p-2 rounded-lg"><i class="fas fa-tv"></i></button>
+        </div>
+        <div class="flex items-center space-x-2">
+            <span class="p-2 bg-gray-200 rounded-full cursor-pointer"><i class="fas fa-bars"></i></span>
+            <span class="p-2 bg-gray-200 rounded-full cursor-pointer"><i class="fas fa-bell"></i></span>
+        </div>
+    </nav>
+
+    <!-- Main Profile Container -->
+    <div class="max-w-4xl mx-auto bg-white shadow rounded-b-lg">
+        
+        <!-- Cover Photo Section -->
+        <div class="relative h-48 md:h-72 w-full bg-gray-300 rounded-t-lg overflow-hidden">
+            <img src="assets/images/cover.jpg" alt="Bachelor Point Cover Photo" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Profile Header Details -->
+        <div class="px-6 pb-4 relative border-b">
+            <div class="flex flex-col md:flex-row items-center md:items-end justify-between -mt-16 md:-mt-12 space-y-4 md:space-y-0">
+                <div class="flex flex-col md:flex-row items-center md:items-end space-x-0 md:space-x-4">
+                    <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white overflow-hidden shadow-lg bg-white">
+                        <img src="assets/images/profile.jpg" alt="Profile Picture" class="w-full h-full object-cover">
+                    </div>
+                    <div class="text-center md:text-left mt-2">
+                        <h1 class="text-2xl md:text-3xl font-bold">Prince AR Abdur Rahman</h1>
+                        <p class="text-gray-500 font-semibold text-sm">4.6K followers • 1 following • 61 posts</p>
+                        <p class="text-gray-700 italic text-sm mt-1">Future Millionaire loading...</p>
+                    </div>
+                </div>
+                <!-- Action Buttons -->
+                <div class="flex space-x-2">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md font-semibold text-sm flex items-center space-x-1 hover:bg-blue-700">
+                        <i class="fas fa-chart-line"></i> <span>Dashboard</span>
+                    </button>
+                    <button class="bg-gray-200 text-black px-4 py-2 rounded-md font-semibold text-sm flex items-center space-x-1 hover:bg-gray-300">
+                        <i class="fas fa-plus"></i> <span>Create</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex space-x-2 md:space-x-4 mt-6 border-t pt-2 text-gray-600 font-semibold text-sm overflow-x-auto">
+                <button class="filter-btn active text-blue-600 border-b-2 border-blue-600 pb-2 px-3" data-filter="all">All</button>
+                <button class="filter-btn hover:bg-gray-100 p-2 rounded-md px-3" data-filter="travel">Travel & Biker</button>
+                <button class="filter-btn hover:bg-gray-100 p-2 rounded-md px-3" data-filter="campus">Campus & Friends</button>
+                <button class="filter-btn hover:bg-gray-100 p-2 rounded-md px-3" data-filter="aesthetic">Aesthetic & Quotes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Grid Content -->
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 px-2 md:px-0">
+        
+        <!-- Left Sidebar: Details & Highlights -->
+        <div class="space-y-4">
+            <!-- Personal Details Box -->
+            <div class="bg-white p-4 rounded-lg shadow space-y-3">
+                <h2 class="text-xl font-bold border-b pb-2">Personal Details</h2>
+                
+                <div class="flex items-center space-x-3 text-gray-700 text-sm">
+                    <i class="fas fa-magic text-xl text-gray-500 w-6"></i>
+                    <span><strong>AI creator</strong></span>
+                </div>
+                <div class="flex items-center space-x-3 text-gray-700 text-sm">
+                    <i class="fas fa-map-marker-alt text-xl text-gray-500 w-6"></i>
+                    <span>Lives in <strong>Rangpur City</strong></span>
+                </div>
+                <div class="flex items-center space-x-3 text-gray-700 text-sm">
+                    <i class="fas fa-briefcase text-xl text-gray-500 w-6"></i>
+                    <span>Founder at <strong>Nexvora Labs</strong></span>
+                </div>
+                <div class="flex items-center space-x-3 text-gray-700 text-sm">
+                    <i class="fas fa-graduation-cap text-xl text-gray-500 w-6"></i>
+                    <span>Studied at <strong>Sunflower School & College, Saidpur</strong></span>
+                </div>
+                <div class="flex items-center space-x-3 text-gray-700 text-sm">
+                    <i class="fab fa-instagram text-xl text-gray-500 w-6"></i>
+                    <a href="https://instagram.com/ur___abdur_____rahman__2008" target="_blank" class="text-blue-600 hover:underline break-all">
+                        ur___abdur_____rahman__2008
+                    </a>
+                </div>
+                <div class="flex items-center space-x-3 text-gray-700 text-sm">
+                    <i class="fas fa-birthday-cake text-xl text-gray-500 w-6"></i>
+                    <span>May 25, 2008</span>
+                </div>
+            </div>
+
+            <!-- Highlights Section -->
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-3">Highlights</h2>
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="text-center">
+                        <div class="h-24 bg-gray-200 rounded-lg overflow-hidden">
+                            <img src="assets/images/highlight1.jpg" class="w-full h-full object-cover" alt="Shopnopuri">
+                        </div>
+                        <span class="text-xs font-semibold mt-1 block">স্বপ্নপুরী</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="h-24 bg-gray-200 rounded-lg overflow-hidden">
+                            <img src="assets/images/highlight2.jpg" class="w-full h-full object-cover" alt="Nature">
+                        </div>
+                        <span class="text-xs font-semibold mt-1 block">🐍 Nature</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="h-24 bg-gray-200 rounded-lg overflow-hidden">
+                            <img src="assets/images/highlight3.jpg" class="w-full h-full object-cover" alt="Tea">
+                        </div>
+                        <span class="text-xs font-semibold mt-1 block">Tea ☕</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Timeline Feed -->
+        <div class="md:col-span-2 space-y-4">
+            
+            <!-- Post 1: Farewell / School Life -->
+            <div class="post-card bg-white rounded-lg shadow p-4" data-category="campus">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="assets/images/profile.jpg" class="w-10 h-10 rounded-full" alt="User">
+                    <div>
+                        <h4 class="font-bold text-sm">Prince AR Abdur Rahman <span class="text-gray-500 font-normal">is feeling sad with</span> Adnan Hasan Rongon <span class="text-gray-500 font-normal">and 4 others</span></h4>
+                        <p class="text-xs text-gray-500">Feb 27 • <i class="fas fa-globe-americas"></i></p>
+                    </div>
+                </div>
+                <p class="text-sm mb-3">অবশেষে দীর্ঘ পাঁচ বছরের শিক্ষা জীবন আমাদের শেষ হয়ে গেলো। সবসময় মনে থাকবে বন্ধু তোদের... ❤️</p>
+                <div class="grid grid-cols-2 gap-1 rounded-lg overflow-hidden">
+                    <img src="assets/images/farewell1.jpg" class="w-full h-40 object-cover">
+                    <img src="assets/images/farewell2.jpg" class="w-full h-40 object-cover">
+                    <img src="assets/images/farewell3.jpg" class="w-full h-40 object-cover">
+                    <div class="relative">
+                        <img src="assets/images/farewell4.jpg" class="w-full h-40 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-white text-xl font-bold">+15</div>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center text-xs text-gray-500 mt-3 pt-2 border-t">
+                    <span>❤️ 👍 99</span>
+                    <span>9 comments • 2.2K views</span>
+                </div>
+                <div class="flex justify-around border-t mt-2 pt-1 text-gray-600 font-semibold text-sm">
+                    <button class="like-btn hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-thumbs-up"></i> Like</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-comment"></i> Comment</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+
+            <!-- Post 2: Pinned Travel Post (Tetulia) -->
+            <div class="post-card bg-white rounded-lg shadow p-4" data-category="travel">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="assets/images/profile.jpg" class="w-10 h-10 rounded-full" alt="User">
+                    <div>
+                        <h4 class="font-bold text-sm">Prince AR Abdur Rahman <span class="text-gray-500 font-normal">is feeling awesome at</span> বাংলাবান্ধা, তেঁতুলিয়া</h4>
+                        <p class="text-xs text-gray-500"><i class="fas fa-thumbtack text-blue-500"></i> Pinned • Jun 12 • <i class="fas fa-globe-americas"></i></p>
+                    </div>
+                </div>
+                <p class="text-sm mb-3">Self respect is more important than feelings.</p>
+                <div class="grid grid-cols-2 gap-1 rounded-lg overflow-hidden">
+                    <img src="assets/images/tetulia1.jpg" class="w-full h-48 object-cover">
+                    <img src="assets/images/tetulia2.jpg" class="w-full h-48 object-cover">
+                </div>
+                <div class="flex justify-between items-center text-xs text-gray-500 mt-3 pt-2 border-t">
+                    <span>❤️ 👍 58</span>
+                    <span>8 comments • 2.5K views</span>
+                </div>
+                <div class="flex justify-around border-t mt-2 pt-1 text-gray-600 font-semibold text-sm">
+                    <button class="like-btn hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-thumbs-up"></i> Like</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-comment"></i> Comment</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+
+            <!-- Post 3: Aesthetic / Lamp Post -->
+            <div class="post-card bg-white rounded-lg shadow p-4" data-category="aesthetic">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="assets/images/profile.jpg" class="w-10 h-10 rounded-full" alt="User">
+                    <div>
+                        <h4 class="font-bold text-sm">Prince AR Abdur Rahman</h4>
+                        <p class="text-xs text-gray-500">Jul 8 • <i class="fas fa-globe-americas"></i></p>
+                    </div>
+                </div>
+                <p class="text-sm mb-3">কাউকে ঘৃণা করার মতো মন মানসিকতা বা সময় কোনোটাই আমার নেই 🙂</p>
+                <div class="rounded-lg overflow-hidden">
+                    <img src="assets/images/night_aesthetic.jpg" class="w-full h-80 object-cover">
+                </div>
+                <div class="flex justify-between items-center text-xs text-gray-500 mt-3 pt-2 border-t">
+                    <span>❤️ 👍 77</span>
+                    <span>22 comments • 1.6K views</span>
+                </div>
+                <div class="flex justify-around border-t mt-2 pt-1 text-gray-600 font-semibold text-sm">
+                    <button class="like-btn hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-thumbs-up"></i> Like</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-comment"></i> Comment</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+
+            <!-- Post 4: Biker / Essentials Post -->
+            <div class="post-card bg-white rounded-lg shadow p-4" data-category="travel">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="assets/images/profile.jpg" class="w-10 h-10 rounded-full" alt="User">
+                    <div>
+                        <h4 class="font-bold text-sm">Prince AR Abdur Rahman</h4>
+                        <p class="text-xs text-gray-500">Jul 18 • <i class="fas fa-globe-americas"></i></p>
+                    </div>
+                </div>
+                <p class="text-sm mb-3">Quiet moves. Loud results. 🖤</p>
+                <div class="grid grid-cols-2 gap-1 rounded-lg overflow-hidden">
+                    <img src="assets/images/bike1.jpg" class="w-full h-40 object-cover">
+                    <img src="assets/images/bike2.jpg" class="w-full h-40 object-cover">
+                </div>
+                <div class="flex justify-between items-center text-xs text-gray-500 mt-3 pt-2 border-t">
+                    <span>❤️ 👍 46</span>
+                    <span>10 comments • 1.1K views</span>
+                </div>
+                <div class="flex justify-around border-t mt-2 pt-1 text-gray-600 font-semibold text-sm">
+                    <button class="like-btn hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-thumbs-up"></i> Like</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-comment"></i> Comment</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+
+            <!-- Post 5: Spiritual / Punjabi Post -->
+            <div class="post-card bg-white rounded-lg shadow p-4" data-category="aesthetic">
+                <div class="flex items-center space-x-2 mb-2">
+                    <img src="assets/images/profile.jpg" class="w-10 h-10 rounded-full" alt="User">
+                    <div>
+                        <h4 class="font-bold text-sm">Prince AR Abdur Rahman</h4>
+                        <p class="text-xs text-gray-500">Mar 31 • <i class="fas fa-globe-americas"></i></p>
+                    </div>
+                </div>
+                <p class="text-sm mb-3">হাসবুনাল্লাহু ওয়া নি'মাল ওয়াকিল...। 🖤</p>
+                <div class="rounded-lg overflow-hidden">
+                    <img src="assets/images/punjabi.jpg" class="w-full h-80 object-cover">
+                </div>
+                <div class="flex justify-between items-center text-xs text-gray-500 mt-3 pt-2 border-t">
+                    <span>❤️ 👍 69</span>
+                    <span>18 comments • 1.1K views</span>
+                </div>
+                <div class="flex justify-around border-t mt-2 pt-1 text-gray-600 font-semibold text-sm">
+                    <button class="like-btn hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-thumbs-up"></i> Like</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="far fa-comment"></i> Comment</button>
+                    <button class="hover:bg-gray-100 w-full py-1 rounded"><i class="fas fa-share"></i> Share</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Custom Script JS -->
+    <script src="script.js"></script>
+</body>
+                          </html>
+                          
