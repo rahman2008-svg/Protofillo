@@ -1,0 +1,49 @@
+/* Custom CSS Extensions for smooth transitions & effects */
+
+body {
+    background-color: #f0f2f5;
+}
+
+/* Like Button Animation */
+.like-btn.liked {
+    color: #1877f2;
+    font-weight: bold;
+}
+
+/* Filter Tab Styling */
+.filter-btn {
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.filter-btn.active {
+    color: #1877f2;
+    border-bottom: 2px solid #1877f2;
+}
+
+/* Smooth Image Hover Effect */
+.post-card img {
+    transition: transform 0.3s ease;
+}
+
+.post-card img:hover {
+    transform: scale(1.02);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bcc0c4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9fa4a9;
+}
